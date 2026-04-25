@@ -13,7 +13,7 @@ services:
       - postgres_data:/var/lib/postgresql/data
   server:
     build:
-      context: ./server
+      context:
     container_name: kanban_server
     depends_on:
       - db
