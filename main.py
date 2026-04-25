@@ -2,9 +2,9 @@ from fastapi import FastAPI, WebSocket, WebSocketDisconnect, Depends
 from fastapi import Body
 from sqlalchemy.orm import Session
 from typing import List
-from .database import SessionLocal, engine
+from database import SessionLocal, engine
 from .models import Board, BoardColumn, Card
-from .crud import (
+from crud import (
     get_boards, create_board, update_board, delete_board,
     get_columns, create_column, update_column, delete_column,
     get_cards, create_card, update_card, delete_card,

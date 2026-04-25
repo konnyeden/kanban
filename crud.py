@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from .models import Board, BoardColumn, Card
+from models import Board, BoardColumn, Card
 from .schemas import BoardOut, ColumnOut, CardOut
 
 
